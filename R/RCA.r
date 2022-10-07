@@ -28,7 +28,7 @@ RCA <- function (mat, binary = FALSE) {
   LQ[is.na(LQ)] <- 0
   
   if (binary) {
-    LQ[LQ < 1] <- 0
+    LQ[LQ <= 1] <- 0
     LQ[LQ > 1] <- 1
   } 
   LQ = round (LQ, digits = 2)
