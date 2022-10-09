@@ -43,7 +43,7 @@ reldens <- t(rel) / reltot
 reldens <- t(reldens) * 100
 
 # round
-reldens <- round (reldens, digits = 2)
+reldens <- round (reldens, digits = 3)
 
 if(sum (mat>1) > 0){
   warning("some entries in the region - industry matrix are > 1")
